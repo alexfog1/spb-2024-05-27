@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подкаст105</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensures the body takes full viewport height */
+            overflow-y: scroll; /* Ensures scrolling is enabled */
+        }
+        main {
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    <header>
+        <div class="header-content">
+            <!-- Logo on the left -->
+            <img src="logo.png" alt="Logo" class="logo">  
+            <!-- Navigation links (will be hidden on mobile) -->
+            <nav class="navigation">
+                <a href="index.html">Главная</a>
+                <a href="#equipment-section">Оборудование</a>
+                <a href="#booking">Бронирование</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <!-- Booking button on the right -->
+            <a href="#booking" class="button-right">Забронировать</a>
+        </div>
+    </header>
+    <div class="container"> 
+        <div class="main">
+            <div class="row">
+                <div class="left">
+                    <span>Аренда студии в Санкт-Петербурге</span>
+                    <h1>Студия для <br>записи подкастов</h1>
+                    <ul class="service-list">
+                        <li style="color: #AFB5BA;" class="item-default podcast">
+                            • Подкасты
+                        </li>
+                        <li style="color: #AFB5BA;" class="item-default podcast">
+                            • Интервью
+                        </li>
+                        <li style="color: #AFB5BA;" class="item-default podcast">
+                            • Онлайн-трансляции
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img src="trok.jpg" alt="Studio Image">
+                </div>
+            </div>
+        </div>
+         
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="3212.png" alt="Icon" />
+                </div>
+                <p>Три уникальные локации с различным декором</p>
+            </div>            
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="32121.png" alt="Icon" />
+                </div>
+                <p>Запись вашего подкаста «под ключ», включая всё от процесса записи до публикации.</p>
+            </div>            
+            <div class="feature-card">
+                <div class="icon-container">
+                    <img src="321221.png" alt="Icon" />
+                </div>
+                <p>Запись вашего подкаста «под ключ», включая всё от процесса записи до публикации.</p>
+            </div>                </div>
+        </div>
+      </div>
+        <section class="studios">
+        <!-- Studio 1 -->
+        <!-- Studio 1 -->
+        <div class="studio" id="studioA">
+            <div class="image-slider">
+                <!-- Hidden radio buttons for controlling the slides -->
+                <input type="radio" name="slider" id="slide1" checked hidden>
+                <input type="radio" name="slider" id="slide2" hidden>
+                <input type="radio" name="slider" id="slide3" hidden>
+
+                <!-- Navigation buttons as labels for radio inputs -->
+                <label for="slide1" class="slider-btn left-btn">&#10094;</label>
+                <label for="slide2" class="slider-btn right-btn">&#10095;</label>
+
+                <!-- Image slides -->
+                <div class="slides">
+                    <div class="slide">
+                        <label for="slide2"><img src="r2.png" class="studio-image" alt="First Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slide3"><img src="r22.png" class="studio-image" alt="Second Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slide1"><img src="r223.png" class="studio-image" alt="Third Image"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-with-button">
+                <div class="text-content">
+                    <h3>Маленькая Комната <span class="price">от 13 000 ₽/час</span></h3>
+                    <p>Для личных историй, обучающих курсов или заседаний книжного клуба.</p>
+                </div>
+                <a href="#booking" class="book-button">+</a>
+            </div>
+        </div>
+
+        <!-- Studio 2 -->
+        <div class="studio" id="studioB">
+            <div class="image-slider">
+                <!-- Hidden radio buttons for controlling the slides -->
+                <input type="radio" name="sliderB" id="slideB1" checked hidden>
+                <input type="radio" name="sliderB" id="slideB2" hidden>
+                <input type="radio" name="sliderB" id="slideB3" hidden>
+        
+                <!-- Navigation buttons as labels for radio inputs -->
+                <label for="slideB1" class="slider-btn left-btn">&#10094;</label>
+                <label for="slideB2" class="slider-btn right-btn">&#10095;</label>
+        
+                <!-- Image slides -->
+                <div class="slides">
+                    <div class="slide">
+                        <label for="slideB2"><img src="r2.png" alt="First Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slideB3"><img src="r22.png" alt="Second Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slideB1"><img src="r223.png" alt="Third Image"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-with-button">
+                <div class="text-content">
+                    <h3>Большая Комната <span class="price">от 15 000 ₽/час</span></h3>
+                    <p>Идеально подходит для семинаров, мастер-классов или крупных мероприятий.</p>
+                </div>
+                <a href="#booking/" class="book-button">+</a>
+            </div>
+        </div>
+            
+        <!-- Studio 3 -->
+        <div class="studio" id="studioC">
+            <div class="image-slider">
+                <!-- Hidden radio buttons for controlling the slides -->
+                <input type="radio" name="sliderC" id="slideC1" checked hidden>
+                <input type="radio" name="sliderC" id="slideC2" hidden>
+                <input type="radio" name="sliderC" id="slideC3" hidden>
+        
+                <!-- Navigation buttons as labels for radio inputs -->
+                <label for="slideC1" class="slider-btn left-btn">&#10094;</label>
+                <label for="slideC2" class="slider-btn right-btn">&#10095;</label>
+        
+                <!-- Image slides -->
+                <div class="slides">
+                    <div class="slide">
+                        <label for="slideC2"><img src="r2.png" alt="First Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slideC3"><img src="r22.png" alt="Second Image"></label>
+                    </div>
+                    <div class="slide">
+                        <label for="slideC1"><img src="r223.png" alt="Third Image"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-with-button">
+                <div class="text-content">
+                    <h3>Исключительная Комната <span class="price">от 20 000 ₽/час</span></h3>
+                    <p>Лучшее предложение для эксклюзивных встреч и высококлассных событий.</p>
+                </div>
+                <a href="#booking" class="book-button">+</a>
+            </div>
+        </div>
+            </section>
+    <body>
+        <div class="equipment-section">
+            <h1>Оборудование</h1>
+            <div class="buttons-container">
+                <button class="equipment-button" onclick="showEquipment('audio')"id="audioButton">Аудио</button>
+                <button class="equipment-button" onclick="showEquipment('video')">Видео и оптика</button>
+                <button class="equipment-button" onclick="showEquipment('lighting')">Осветительные приборы</button>
+                <button class="equipment-button" onclick="showEquipment('additional')">Доп.оборудование</button>
+            </div>
+            <div class="image-container" id="equipmentImage">
+                <!-- Images will be displayed here -->
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+    
+    <div class="faq-section">
+        <h1>Часто задаваемые вопросы</h1>
+        <div class="faq-item">
+            <button class="faq-question">Есть ли парковка? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">На территории студии имеется бесплатная парковка для клиентов.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Напитки и еда? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">Мы предлагаем бесплатные напитки, а также вы можете заказать еду со скидкой в соседних кафе.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Вы можете сделать монтаж? <span class="arrow">&#9662;</span></button>
+            <div class="faq-answer">Да, мы предоставляем полный спектр услуг по постпродакшену, включая монтаж аудио и видео.</div>
+        </div>
+    </div>
+
+
+    <section id="booking" class="contacts-container">
+        <div class="contacts-content">
+            <h2>Бронирование</h2>
+            <!-- You can include your form here -->
+        </div>
+    </section>
+    
+    <div id="form_216899_1"></div>
+    <script type="text/javascript">
+       (function (d, w, c) {
+           (w[c] = w[c] || []).push({formId:216899,host:"formdesigner.ru",formHeight:100, el: "form_216899_1",center: 1,scroll: 0});
+           var s = d.createElement("script"), g = "getElementsByTagName";
+           s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
+           s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js?v=0.0.3";
+           var h=d[g]("head")[0] || d[g]("body")[0];
+           h.appendChild(s);
+       })(document, window, "fdforms");
+    </script>
+
+    </section>
+    <section id="contacts" class="contacts-container">
+        <div class="contacts-content">
+            <h2>Контакты</h2>
+            <div class="contacts-layout">
+                <div class="map-container">
+                    <!-- Your map iframe -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=30.314997%2C59.938784&z=11" width="400" height="294" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                </div>
+                <div class="info-container">
+                    <div class="contact-info">
+                        <div class="contact-section">
+                            <div class="map-container">
+                                <!-- Your map iframe here -->
+                            </div>
+                                <div class="contact-info">
+                                <p><i class="fas fa-clock"></i> Режим работы: с 09:00 до 21:00</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Ул. Егора д.3 офис 13</p>
+                                <p><i class="fas fa-envelope"></i> admin@podcast105.ru</p>
+                                <p><i class="fas fa-phone"></i> +7 (911) 167-24-14</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Подкаст 105</h3>
+                    <p>ООО "VSS"</p>
+                    <a href="politika.html">Политика конфиденциальности</a>
+                    <a href="politika2.html">Правила подкаст студии</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="#">Локации</a></li>
+                        <li><a href="#">Оборудование</a></li>
+                        <li><a href="#">Цены</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Садовая-Каретная 20с2</p>
+                    <p>Режим работы: с 09:00 до 21:00, без выходных</p>
+                    <p> +7 (911) 167-24-14</p>
+                    <p>admin@podcast105</p>
+                </div>
+                <div class="icons-container">
+                    <a href="https://t.me/yourusername" class="social-icon" target="_blank" aria-label="Telegram">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    <a href="https://wa.me/yournumber" class="social-icon" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://vk.com/yourusername" class="social-icon" target="_blank" aria-label="VK">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <!-- Add more icons as needed -->
+                </div>
+            </div>
+        </footer>
+        <script>
+            // This script can be enhanced to add more complex scrolling animations if needed
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+    
+    </section>
+        <script src="script.js"></script>
+
+            
+            
+            
+            
+                        
+            
+            
+            
+            
+                    
+</body>
+</html>
